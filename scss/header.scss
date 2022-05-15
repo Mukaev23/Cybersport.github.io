@@ -1,0 +1,76 @@
+.header {
+    padding-top: 20px;
+ 
+    &__inner {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }
+ 
+    &__logo {
+       max-width: 17rem;
+    }
+ 
+    &__nav ul {
+       display: flex;
+       column-gap: 6rem;
+    }
+ 
+    &__nav-link {
+       font-size: 1.6rem;
+ 
+       transition: color .2s linear;
+       &:hover {
+          color: $nav-hover-color;
+       }
+    }
+ 
+    &__btns {
+       display: flex;
+       align-items: center;
+       column-gap: 20px;
+    }
+ 
+    &__contact-btn {
+       font-size: 1.8rem;
+       padding: 15px 30px;
+       border: 1px solid $white-color;
+ 
+       transition: background .2s linear,
+                   color .2s linear;
+       &:hover {
+          background: $white-color;
+          color: $black-color;
+       }
+    }
+ 
+    &__menu > a {
+       border: 1px solid $white-color;
+       padding: 1rem 2rem;
+       font-size: 1.8rem;
+ 
+       position: relative;
+       overflow: hidden;
+       z-index: 2;
+       &::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: $white-color;
+          left: 0;
+          bottom: -100%;
+          z-index: -1;
+ 
+          transition: bottom .15s linear;
+       }
+ 
+       transition: color .2s linear;
+       &:hover {
+          color: $nav-hover-color;
+          &::before {
+             bottom: 0;
+          }
+       }
+    }
+ }

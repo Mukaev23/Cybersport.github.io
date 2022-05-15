@@ -1,0 +1,62 @@
+.footer {
+    background: #222730;
+    padding-top: 13rem;
+ 
+    &__inner {
+       display: flex;
+       column-gap: 15rem;
+ 
+       padding-bottom: 5rem;
+       border-bottom: 1px solid #3E3E3E;
+    }
+ 
+    &__logo {
+       margin-bottom: 3.5rem;
+    }
+ 
+    &__description {
+       color: $gray-color;
+       font-size: 1.5rem;
+       line-height: 1.67;
+       max-width: 29rem;
+    }
+ 
+    &__title {
+       font-size: 1.8rem;
+       font-weight: 400;
+ 
+       margin-bottom: 2.5rem;
+    }
+ 
+    &__list {
+       display: flex;
+       flex-direction: column;
+       row-gap: 1rem;
+       
+       &-link {
+          font-size: 1.5rem;
+          color: $gray-color;
+       }
+    }
+ 
+    &__icons {
+       display: flex;
+       column-gap: 1.5rem;
+    }
+ 
+    &__icon {
+       width: 4.8rem;
+       height: 4.8rem;
+       background: #383D45;
+    }
+ 
+    &__bottom {
+       padding-block: 5rem;
+ 
+       &-text {
+          text-align: center;
+          color: #898989;
+          font-size: 1.4rem;
+       }
+    }
+ }

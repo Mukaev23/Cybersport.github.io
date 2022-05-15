@@ -1,0 +1,39 @@
+.character {
+    background: #2A313C;
+    padding: 0;
+ 
+    &__inner {
+       display: flex;
+       justify-content: space-between;
+    }
+ 
+    &__text {
+       max-width: 60rem;
+       padding-top: 8rem;
+    }
+ 
+    &__choose {
+       display: flex;
+       width: max-content;
+       align-items: center;
+       column-gap: 3rem;
+ 
+       position: relative;
+       &::before, &::after {
+          content: '';
+          position: absolute;
+          width: 4.4rem;
+          height: 4.4rem;
+          background: #3F8CFF;
+       }
+ 
+       &::after {
+          right: 0;
+       }
+ 
+       &-img1 {
+          border: 1rem solid #3B3D46;
+          border-radius: 30px; 
+       }
+    }
+ }

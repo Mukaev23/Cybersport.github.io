@@ -1,0 +1,50 @@
+.join {
+    background: url(../img/join/bg.jpg) center no-repeat;
+    background-size: cover;
+    
+    &__inner {
+       text-align: center;
+       max-width: 85rem;
+       margin: 0 auto;
+    }
+ 
+    &__title {
+       font-size: 7.2rem;
+       font-weight: 400;
+       margin-bottom: 5rem;
+       color: #141820;
+    }
+ 
+    &__underline::after {
+       width: 100%;
+       height: 20px;
+       background: url(../img/sponsors/underline.png) center no-repeat;
+       background-size: contain;
+    }
+ 
+    &__text {
+       color: $gray3-color;
+       margin-bottom: 4.5rem;
+       line-height: 1.56;
+       font-size: 1.8rem;
+    }
+ 
+    &__subscribe {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+ 
+    &__input {
+       width: 44.5rem;
+       height: 8rem;
+       outline: none;
+       border: 1px solid #CCCCCC;
+ 
+       font-size: 1.8rem;
+       font-weight: 700;
+       color: $gray3-color;
+ 
+       padding-left: 1.5rem;
+    }
+ }

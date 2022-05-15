@@ -1,0 +1,115 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+ }
+ 
+ :root {
+    font-size: 10px;
+ }
+ 
+ body {
+    margin: 0;
+    font-family: $orbitron-font;
+    color: $white-color;
+    background: $black-color;
+ }
+ 
+ h1,h2,h3,h4,h5,h6,p,ul {
+    margin: 0;
+ }
+ 
+ ul {
+    padding: 0;
+    list-style-type: none;
+ }
+ 
+ img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+ }
+ 
+ a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+ }
+ 
+ section {
+    padding-block: 13rem;
+ }
+ 
+ .container {
+    max-width: 1350px;
+    padding: 0 15px;
+    margin: 0 auto;
+ }
+ 
+ .wrapper {
+    min-height: 100vh;
+ 
+    position: relative;
+    &::after {
+       content: '';
+       position: absolute;
+       width: 45%;
+       height: 100%;
+       background: $blue-color;
+       right: 0;
+       top: 0;
+       z-index: -1;
+    }
+ }
+ 
+ .section__title {
+    font-weight: 400;
+    font-size: 6.4rem;
+    margin-bottom: 4rem;
+    margin-top: 1.2rem;
+    text-transform: capitalize;
+ }
+ 
+ .section__subtitle {
+    padding-left: 40px;
+    color: $blue-color;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+ 
+    position: relative;
+    &::before {
+       content: "";
+       position: absolute;
+       width: 32px;
+       height: 32px;
+       background: url(../img/fire-icon.png) center no-repeat;
+       left: 0;
+       top: 50%;
+       transform: translateY(-50%);
+    }
+ }
+ 
+ .section__description {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: $gray2-color;
+    opacity: 0.8;
+ 
+    margin-bottom: 5.5rem;
+ }
+ 
+ .underline {
+    position: relative;
+ 
+    &::after {
+       content: "";
+       position: absolute;
+       left: 0;
+       top: 90%;
+    }
+ }
+ 
+ .blue-link {
+    text-transform: capitalize;
+    padding: 20px 35px;
+    background: $blue-color;
+    font-size: 1.8rem;
+ }

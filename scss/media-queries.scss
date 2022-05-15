@@ -1,0 +1,135 @@
+@media (max-width: 1110px) {
+    :root {
+       font-size: 9px;
+    }
+ 
+    .intro__img {
+       display: none;
+    }
+ 
+    .character__choose-img {
+       width: 150px;
+    }
+ 
+    .news__inner {
+      flex-direction: column;
+      gap: 10rem 0;
+    }
+ }
+ 
+ @media (max-width: 1000px) {
+    .character__inner {
+       position: relative;
+       display: block;
+       padding-bottom: 2rem;
+       z-index: 2;
+    }
+    .character__img > img {
+       position: absolute;
+       right: 0;
+       bottom: 0;
+       z-index: -1;
+       max-height: 100%;
+    }
+ 
+    .header__nav, .header__btns {
+       display: none;
+    }
+ 
+    .footer__bottom {
+       padding-block: 3rem;
+    }
+ }
+ 
+ @media (max-width: 850px) {
+    :root {
+       font-size: 8px;
+    }
+ 
+    .era__img {
+       display: none;
+    }
+ 
+    .footer__inner {
+       flex-wrap: wrap;
+       row-gap: 7rem;
+    }
+ 
+    .about {
+       flex-wrap: wrap;
+       &__card {
+          flex-basis: 100%;
+       }
+    }
+    
+    .sponsors__title {
+       font-size: 6rem;
+    }
+    .sponsors__cards {
+       flex-wrap: wrap;
+       justify-content: center;
+       row-gap: 2rem;
+    }
+ 
+    .news__titles {
+       flex-direction: column;
+       align-items: start;
+       row-gap: 5rem;
+    }
+ 
+    .needs__inner {
+       padding-inline: 2rem;
+    }
+ }
+ 
+ @media (max-width: 550px) {
+    :root {
+       font-size: 7px;
+    }
+ 
+    .intro {
+       padding-top: 27rem;
+    }
+ 
+    .character__choose-img {
+       width: 100px;
+    }
+ 
+    .section__title, .join__title {
+       font-size: 5rem;
+    }
+ 
+    .join__subscribe {
+       flex-direction: column;
+       row-gap: 1rem;
+    }
+    .join__input {
+       width: 90vw;
+    }
+ 
+    .section__subtitle {
+       text-shadow: 0 0 5px $black-color;
+    }
+ }
+ 
+ @media (max-width: 400px) { 
+    .character__choose-img  {
+       width: 80px;
+    }
+    .character__choose-img1  {
+       border-radius: 15px;
+    }
+ 
+    .intro__title {
+       font-size: 6rem;
+    }
+    .intro__links {
+       flex-direction: column;
+       align-items: start;
+       row-gap: 5rem;
+    }
+ 
+    .wrapper::after {
+       width: 30%;
+    }
+ }

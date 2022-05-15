@@ -1,0 +1,66 @@
+.intro {
+    padding-top: 21rem;
+ 
+    &__inner {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+    }
+ 
+    &__text {
+       max-width: 655px;
+ 
+       position: relative;
+       &-links {
+          position: absolute;
+          display: flex;
+          column-gap: 5rem;
+ 
+          transform: rotateZ(-90deg);
+ 
+          top: 45%;
+          left: -180px;
+       }
+       &-link {
+          font-size: 1.1rem;
+          color: #80858F;
+          text-transform: uppercase;
+       }
+    }
+ 
+    &__title {
+       font-size: 7.2rem;
+       line-height: 1.19;
+       text-transform: capitalize;
+       margin-bottom: 4.5rem;
+       margin-top: 2.5rem;
+       font-weight: 400;
+    }
+ 
+    &__underline::after {
+       width: 100%;
+       height: 20px;
+       background: url(../img/intro/underline.png) center no-repeat;
+    }
+ 
+    &__description {
+       color: $gray-color;
+       font-size: 1.8rem;
+       margin-bottom: 5rem;
+    }
+ 
+    &__links {
+       display: flex;
+       column-gap: 4rem;
+ 
+       font-size: 1.8rem;
+       align-items: center;
+    }
+ 
+    &__team-link {
+       transition: color .2s linear;
+       &:hover {
+          color: $nav-hover-color;
+       }
+    }
+ }

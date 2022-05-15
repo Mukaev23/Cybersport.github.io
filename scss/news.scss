@@ -1,0 +1,60 @@
+.news {
+    &__titles {
+       display: flex;
+       justify-content: space-between;
+       align-items: end;
+ 
+       margin-bottom: 6.5rem;
+    }
+ 
+    &__title {
+       max-width: 65rem;
+       margin-bottom: 0;
+    }
+ 
+    &__inner {
+       display: flex;
+       justify-content: space-between;
+    }
+ 
+    &__cards {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 4rem 2.5rem;
+ 
+       flex-basis: 50%;
+    }
+ 
+    &__card {
+       max-width: 31.2rem;
+ 
+       &-img {
+          margin-bottom: 3rem;
+       }
+       &-date {
+          color: $blue-color;
+          font-size: 1.6rem;
+          margin-bottom: 2rem;
+       }
+       &-title {
+          font-size: 2.3rem;
+          font-weight: 400;
+          line-height: 1.48;
+       }
+ 
+       &-large {
+          flex-basis: 50%;
+          & .news__card-img {
+             margin-bottom: 5.5rem;
+          }
+          & .news__card-date {
+             font-size: 1.8rem;
+             margin-bottom: 3rem;
+          }
+          & .news__card-title {
+             font-size: 3.6rem;
+             line-height: 1.28;
+          }
+       }
+    }
+ }
